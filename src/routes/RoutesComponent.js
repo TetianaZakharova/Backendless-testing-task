@@ -29,7 +29,7 @@ export const RoutesComponent = () => {
             const HomeLazyComp = LazyImport(homeComponent, tab);
 
             return (
-              <Route key="0" path="/Backendless-testing-task" element={<HomeLazyComp />}>
+              <Route key="0" path="/" element={<HomeLazyComp />}>
                 <Route
                   key={tab.id}
                   path={`/${tab.id}`}
@@ -38,7 +38,7 @@ export const RoutesComponent = () => {
               </Route>
             );
           })}
-          <Route path="/*" element={<Navigate to="/Backendless-testing-task" />} />
+          <Route path="/*" element={<Navigate to="/" />} />
         </Routes>
       </Suspense>
     </div>
