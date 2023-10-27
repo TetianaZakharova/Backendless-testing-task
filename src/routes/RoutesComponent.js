@@ -32,7 +32,7 @@ export const RoutesComponent = () => {
               <Route key="0" path="/Backendless-testing-task" element={<HomeLazyComp />}>
                 <Route
                   key={tab.id}
-                  path={`/Backendless-testing-task/${tab.id}`}
+                  path={`/${tab.id}`}
                   element={<TabLazyComp />}
                 />
               </Route>
